@@ -1,0 +1,557 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title></title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary"></span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Mar 28, 2022 01:39:47 pm</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="fail" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">To submit the Initial Claim and Payment Certification for the employee</p>
+            <p class="text-sm">
+              <span>1:39:49 pm</span> / <span>00:04:25:579</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">To submit the Initial Claim and Payment Certification for the employee</h5>
+<span class='badge badge-success'>03.28.2022 1:39:49 pm</span>
+<span class='badge badge-danger'>03.28.2022 1:44:15 pm</span>
+<span class='badge badge-default'>00:04:25:579</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>Login to the community portal with valid credentials</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinition.StepDefintionForPortalLoginPage.user_navigate_to_community_url()">
+                <span>Given user navigate to community url</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.StepDefintionForPortalLoginPage.user_enters_the_username_and_password(java.lang.String,java.lang.String)">
+                <span>When user enters the username as "janeqaedd1+03@gmail.com" and password as "Janeeddproject@0003"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.StepDefintionForPortalLoginPage.user_should_be_able_to_login()">
+                <span>Then user should be able to login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.StepDefintionFor4511Employerside.user_should_click_view_employees_and_click_the_start_form_button_for_the_particular_employee()">
+                <span>Then User should click view employees and click the start form button for the particular employee</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.StepDefintionFor4511Employerside.user_enters_the_value_in_the_initial_claim_form(java.lang.String)">
+                <span>And User enters the value in normalweeklywages as "500"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.StepDefintionFor4511Employerside.user_enters_the_value_in_the_totalwagespaid(java.lang.String)">
+                <span>And User enters the value in totalwagespaid as "200"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.StepDefintionFor4511Employerside.user_selects_the_value_in_otherpay()">
+                <span>And User selects the value in otherpay</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.StepDefintionFor4511Employerside.user_enters_the_value_in_totalhours(java.lang.String)">
+                <span>And User enters the value in totalhours as "40.00"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.StepDefintionFor4511Employerside.user_selects_the_value_in_absenceofwork()">
+                <span>And User selects the value in absenceofwork</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.StepDefintionFor4511Employerside.user_selects_the_value_in_refusalwork()">
+                <span>And User selects the value in refusalwork</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.StepDefintionFor4511Employerside.user_enters_the_value_in_refusaldate_as_and_refusalhour_as_and_refusalreason_as(java.lang.String,java.lang.String,java.lang.String)">
+                <span>And User enters the value in  refusaldate as "Jan 28, 2022" and refusalhour as "2" and refusalreason as "NA"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.StepDefintionFor4511Employerside.user_selects_the_value_in_holiday_in_the_week()">
+                <span>And User selects the value in holiday in the week</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.StepDefintionFor4511Employerside.user_submits_the_form_by_clicking_the_submit_button()">
+                <span>And User submits the form by clicking the submit button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.StepDefintionFor4511Employerside.user_is_on_the_participating_employees_details_page()">
+                <span>Then User is on the participating employees details page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.StepDefinitionForEmployeeSide.user_receives_the_email_and_submits_4511()">
+                <span>Then User receives the email and submits 4511</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.StepDefinitionForEmployeeSide.user_clicks_the_link_in_the_email_and_redirected_to_the_portal_page()">
+                <span>Then User clicks the link in the email and redirected to the portal page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.StepDefinitionForEmployeeSide.user_enters_the_SSN_and_complete_the_Sectionb_in_the_employee_form(java.lang.String)">
+                <span>And User enters the valid SSN as "283931212" and clicks next</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.StepDefinitionForEmployeeSide.user_selects_the_value_in_sectionb_and_clicks_next()">
+                <span>And User selects the value in sectionb and clicks next</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.StepDefinitionForEmployeeSide.user_enters_the_birthdate_as_and_selects_the_gender(java.lang.String)">
+                <span>And User enters the birthdate as "Feb 15, 1993" and selects the gender</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.StepDefinitionForEmployeeSide.user_selects_whether_they_have_the_same_name_as_SSN_name()">
+                <span>And User selects whether they have the same name as SSN name</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.StepDefinitionForEmployeeSide.user_enters_the_value_in_mailingaddress_as_and_mailingcity_as_and_mailingstate_and_zipcode_as_and_phonenumber_as(java.lang.String,java.lang.String,java.lang.String,java.lang.String)">
+                <span>And User enters the value in mailingaddress as "Testaddress134" and mailingcity as "testcity" and mailingstate and zipcode as "54321" and phonenumber as "9822213393"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.StepDefinitionForEmployeeSide.user_selects_whether_they_have_same_mailingaddress_as_mentioned()">
+                <span>And User selects whether they have same mailingaddress as mentioned</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.StepDefinitionForEmployeeSide.user_selects_whether_they_have_filed_for_an_unemploymentclaim()">
+                <span>And User selects whether they have filed for an unemploymentclaim</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.StepDefinitionForEmployeeSide.user_selects_whether_they_have_worked_for_the_federal_government()">
+                <span>And User selects whether they have worked for the federal government</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.StepDefinitionForEmployeeSide.user_selects_whether_they_have_worked_in_other_state_than_california()">
+                <span>And User selects whether they have worked in other state than california</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.StepDefinitionForEmployeeSide.user_selects_whether_they_have_filed_for_unemployment_insurance()">
+                <span>And User selects whether they have filed for unemployment insurance</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.StepDefinitionForEmployeeSide.user_selects_whether_they_have_driving_license()">
+                <span>And User selects whether they have driving license</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.StepDefinitionForEmployeeSide.user_selects_whether_they_belong_to_other_state()">
+                <span>And User selects whether they belong to other state</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="stepDefinition.StepDefinitionForEmployeeSide.user_selects_whether_they_are_receiving_pension_other_than_wages()">
+                <span>And User selects whether they are receiving pension other than wages</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button lightning-basecombobox_basecombobox="" id="combobox-button-318" type="button" aria-expanded="false" aria-haspopup="listbox" name="Receiving_Pension_other_than_SS_Railway__c" data-value="--None--" aria-label="Receiving pension other than SS?, --None--" class="slds-combobox__input slds-input_faux slds-combobox__input-value" aria-controls="dropdown-element-318">...</button> is not clickable at point (674, 565). Other element would receive the click: <div c-form4511cliamentinformationone_form4511cliamentinformationone="" class="slds-docked-form-footer slds-float_right">...</div>
+  (Session info: chrome=99.0.4844.82)
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'MSTSYS0000443', ip: '192.168.29.220', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.82, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\JANEHE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58524}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 61c394799e1df2514e2c89cbac298f24
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at com.mst.advance.automation.pages.EmployeePage.receivingPensionOtherThanWages(EmployeePage.java:320)
+	at stepDefinition.StepDefinitionForEmployeeSide.user_selects_whether_they_are_receiving_pension_other_than_wages(StepDefinitionForEmployeeSide.java:188)
+	at ?.User selects whether they are receiving pension other than wages(file:///C:/Users/MSTSYS/eclipse-workspace/AdvanceLevelAutomation/Featurefile/TestCase.feature:37)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinition.StepDefinitionForEmployeeSide.user_clicks_the_add_employer_button_and_gives_the_employer_name_as_and_selects_the_paycycle_and_gives_the_earnings_as_and_gives_the_startdate_as_and_enddate_as_and_then_clicks_submit(java.lang.String,java.lang.String,java.lang.String,java.lang.String)">
+                <span>And User clicks the add employer button and gives the employer name as "Techinfoland" and selects the paycycle and gives the earnings as "700" and gives the startdate as "Jul 5, 2021" and enddate as "Feb 27, 2022" and then clicks submit</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinition.StepDefinitionForEmployeeSide.user_selects_to_which_employer_the_employee_worked_for_the_longest_as(java.lang.String)">
+                <span>And User selects to which employer the employee worked for the longest as "Hyundai"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinition.StepDefinitionForEmployeeSide.user_selects_the_sector_of_the_employer()">
+                <span>And User selects the sector of the employer</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinition.StepDefinitionForEmployeeSide.user_selects_the_business_category_and_business_type_of_the_employer()">
+                <span>And User selects the business category and business type of the employer</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinition.StepDefinitionForEmployeeSide.user_enters_the_value_in_workingdays_as(java.lang.String)">
+                <span>And User enters the value in workingdays as "5"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinition.StepDefinitionForEmployeeSide.user_selects_whether_they_worked_as_corporate_officer()">
+                <span>And User selects whether they worked as corporate officer</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinition.StepDefinitionForEmployeeSide.user_selects_whether_they_have_received_the_worker_compensation()">
+                <span>And User selects whether they have received the worker compensation</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinition.StepDefinitionForEmployeeSide.user_selects_the_wriiten_language_preference_and_spoken_language_preference()">
+                <span>And User selects the written language preference and spoken language preference</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinition.StepDefinitionForEmployeeSide.user_selects_whether_they_have_filed_a_claim_for_that_week()">
+                <span>And User selects whether they have filed a claim for that week</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinition.StepDefinitionForEmployeeSide.user_selects_the_race_and_whether_they_are_disable_or_not()">
+                <span>And User selects the race and whether they are disable or not</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinition.StepDefinitionForEmployeeSide.user_checks_the_acknowledgement_and_enters_the_name_of_the_signee_as_and_clicks_submit(java.lang.String)">
+                <span>And User checks the acknowledgement and enters the name of the signee as "John Abraham" and clicks submit</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>stepDefinition.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>screenshot
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded1.png' src="../Screenshots/embedded1.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">org.openqa.selenium.ElementClickInterceptedException</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.ElementClickInterceptedException</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>13:44:09 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='32'>And User selects whether they are receiving pension other than wages</a>
+<div class="">
+<span class="badge badge-default">To submit the Initial Claim and Payment Certification for the employee.Login to the community portal with valid credentials.And User selects whether they are receiving pension other than wages</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Mar 28, 2022 01:39:47 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Mar 28, 2022 01:44:15 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>0</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>1</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'>
+<b>0</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='100%'><b>1</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'><b>0</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='100%'><b>1</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='70%'><b>29</b> steps passed</small></div>
+<div>
+<small data-tooltip='2%'><b>1</b> steps failed,
+<b>11</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"To submit the Initial Claim and Payment Certification for the employee":265.579
+};
+</script>
+<div class="row">
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 0,
+failParent: 1,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 0,
+failChild: 1,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 29,
+failGrandChild: 1,
+warningGrandChild: 0,
+skipGrandChild: 11,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>
