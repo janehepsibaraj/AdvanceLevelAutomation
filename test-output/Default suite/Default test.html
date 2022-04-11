@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Mar 28 14:03:12 IST 2022</td>
+<td>Started on:</td><td>Mon Apr 04 15:57:12 IST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>142 seconds (142692 ms)</td>
+<tr><td>Total time:</td><td>74 seconds (74850 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,18 +76,64 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.mst.advance.automation.testrunner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.mst.advance.automation.testrunner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login to the community portal with valid credentials", "Optional[To submit the Initial Claim and Payment Certification for the employee]"</td>
-<td><div><pre>java.lang.AssertionError: Index 0 out of bounds for length 0
-	at org.testng.Assert.fail(Assert.java:97)
-	at stepDefinition.StepDefinitionForEmployeeSide.user_clicks_the_link_in_the_email_and_redirected_to_the_portal_page(StepDefinitionForEmployeeSide.java:74)
-	at ?.User clicks the link in the email and redirected to the portal page(file:///C:/Users/MSTSYS/eclipse-workspace/AdvanceLevelAutomation/Featurefile/TestCase.feature:24)
-</pre></div><a href='#' onClick='toggleBox("stack-trace284902773", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace284902773'><pre>java.lang.AssertionError: Index 0 out of bounds for length 0
-	at org.testng.Assert.fail(Assert.java:97)
-	at stepDefinition.StepDefinitionForEmployeeSide.user_clicks_the_link_in_the_email_and_redirected_to_the_portal_page(StepDefinitionForEmployeeSide.java:74)
-	at ?.User clicks the link in the email and redirected to the portal page(file:///C:/Users/MSTSYS/eclipse-workspace/AdvanceLevelAutomation/Featurefile/TestCase.feature:24)
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@name =&apos;Normal_Weekly_Wages__c&apos;]&quot;}
+  (Session info: chrome=100.0.4896.60)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;MSTSYS0000443&apos;, ip: &apos;192.168.29.220&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.60, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\JANEHE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51501}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fee93b12432cdd58fe85e3328dbd708a
+*** Element info: {Using=xpath, value=//input[@name =&apos;Normal_Weekly_Wages__c&apos;]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:421)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
+	at com.mst.advance.automation.pages.EmployerFormPage.normalWeeklyWages(EmployerFormPage.java:113)
+	at stepDefinition.StepDefintionFor4511Employerside.user_enters_the_value_in_the_initial_claim_form(StepDefintionFor4511Employerside.java:73)
+	at ?.User enters the value in normalweeklywages as &quot;500&quot;(file:///C:/Users/MSTSYS/eclipse-workspace/AdvanceLevelAutomation/Featurefile/TestCase.feature:12)
+</pre></div><a href='#' onClick='toggleBox("stack-trace667237426", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace667237426'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@name =&apos;Normal_Weekly_Wages__c&apos;]&quot;}
+  (Session info: chrome=100.0.4896.60)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;MSTSYS0000443&apos;, ip: &apos;192.168.29.220&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.60, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\JANEHE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51501}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fee93b12432cdd58fe85e3328dbd708a
+*** Element info: {Using=xpath, value=//input[@name =&apos;Normal_Weekly_Wages__c&apos;]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:421)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
+	at com.mst.advance.automation.pages.EmployerFormPage.normalWeeklyWages(EmployerFormPage.java:113)
+	at stepDefinition.StepDefintionFor4511Employerside.user_enters_the_value_in_the_initial_claim_form(StepDefintionFor4511Employerside.java:73)
+	at ?.User enters the value in normalweeklywages as &quot;500&quot;(file:///C:/Users/MSTSYS/eclipse-workspace/AdvanceLevelAutomation/Featurefile/TestCase.feature:12)
 </pre></div></td>
-<td>139</td>
-<td>com.mst.advance.automation.testrunner.RunnerClass@5cdec700</td></tr>
+<td>71</td>
+<td>com.mst.advance.automation.testrunner.RunnerClass@75d2da2d</td></tr>
 </table><p>
 </body>
 </html>

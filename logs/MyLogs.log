@@ -82,3 +82,70 @@
 [INFO ] 2022-03-28 14:10:51.396 [main] StepDefintionForPortalLoginPage - User is on the portal page
 [INFO ] 2022-03-28 14:10:59.933 [main] StepDefintionForPortalLoginPage - User got logged in
 [INFO ] 2022-03-28 14:15:03.029 [main] Hooks - Closing the browser
+[INFO ] 2022-03-28 18:21:01.608 [main] Hooks - Launching chrome browser
+[WARN ] 2022-03-28 18:21:01.617 [main] Hooks - Hey this just a warning message
+[FATAL] 2022-03-28 18:21:01.617 [main] Hooks - hey this is just fatal error message
+[DEBUG] 2022-03-28 18:21:01.617 [main] Hooks - this is debug message
+[INFO ] 2022-03-28 18:21:15.886 [main] StepDefintionForPortalLoginPage - User is on the portal page
+[INFO ] 2022-03-28 18:21:24.426 [main] StepDefintionForPortalLoginPage - User got logged in
+[INFO ] 2022-03-28 18:25:27.931 [main] Hooks - Closing the browser
+[INFO ] 2022-03-31 18:06:05.134 [main] Hooks - Launching chrome browser
+[WARN ] 2022-03-31 18:06:05.148 [main] Hooks - Hey this just a warning message
+[FATAL] 2022-03-31 18:06:05.148 [main] Hooks - hey this is just fatal error message
+[DEBUG] 2022-03-31 18:06:05.149 [main] Hooks - this is debug message
+[INFO ] 2022-03-31 18:06:15.693 [main] StepDefintionForPortalLoginPage - User is on the portal page
+[INFO ] 2022-03-31 18:06:24.248 [main] StepDefintionForPortalLoginPage - User got logged in
+[INFO ] 2022-03-31 18:07:30.088 [main] Hooks - Closing the browser
+[INFO ] 2022-04-04 11:28:51.778 [main] Hooks - Launching chrome browser
+[WARN ] 2022-04-04 11:28:51.787 [main] Hooks - Hey this just a warning message
+[FATAL] 2022-04-04 11:28:51.787 [main] Hooks - hey this is just fatal error message
+[DEBUG] 2022-04-04 11:28:51.788 [main] Hooks - this is debug message
+[INFO ] 2022-04-04 11:29:06.694 [main] StepDefintionForPortalLoginPage - User is on the portal page
+[INFO ] 2022-04-04 11:29:15.236 [main] StepDefintionForPortalLoginPage - User got logged in
+[INFO ] 2022-04-04 11:31:33.898 [main] Hooks - Closing the browser
+[INFO ] 2022-04-04 15:57:21.397 [main] Hooks - Launching chrome browser
+[WARN ] 2022-04-04 15:57:21.408 [main] Hooks - Hey this just a warning message
+[FATAL] 2022-04-04 15:57:21.409 [main] Hooks - hey this is just fatal error message
+[DEBUG] 2022-04-04 15:57:21.409 [main] Hooks - this is debug message
+[INFO ] 2022-04-04 15:57:34.897 [main] StepDefintionForPortalLoginPage - User is on the portal page
+[INFO ] 2022-04-04 15:57:43.636 [main] StepDefintionForPortalLoginPage - User got logged in
+[INFO ] 2022-04-04 15:58:25.315 [main] Hooks - Closing the browser
+[INFO ] 2022-04-04 21:44:20.978 [main] Hooks - Launching chrome browser
+[WARN ] 2022-04-04 21:44:20.993 [main] Hooks - Hey this just a warning message
+[FATAL] 2022-04-04 21:44:20.993 [main] Hooks - hey this is just fatal error message
+[DEBUG] 2022-04-04 21:44:20.994 [main] Hooks - this is debug message
+[INFO ] 2022-04-04 21:44:44.767 [main] StepDefintionForPortalLoginPage - User is on the portal page
+[INFO ] 2022-04-04 21:44:53.526 [main] StepDefintionForPortalLoginPage - User got logged in
+[INFO ] 2022-04-04 21:45:33.286 [main] Hooks - Closing the browser
+[INFO ] 2022-04-05 10:18:10.420 [main] Hooks - Launching chrome browser
+[WARN ] 2022-04-05 10:18:10.432 [main] Hooks - Hey this just a warning message
+[FATAL] 2022-04-05 10:18:10.433 [main] Hooks - hey this is just fatal error message
+[DEBUG] 2022-04-05 10:18:10.434 [main] Hooks - this is debug message
+[INFO ] 2022-04-05 20:57:59.171 [main] Hooks - Launching chrome browser
+[WARN ] 2022-04-05 20:57:59.180 [main] Hooks - Hey this just a warning message
+[FATAL] 2022-04-05 20:57:59.180 [main] Hooks - hey this is just fatal error message
+[DEBUG] 2022-04-05 20:57:59.181 [main] Hooks - this is debug message
+[INFO ] 2022-04-05 20:58:12.256 [main] StepDefintionForPortalLoginPage - User is on the portal page
+[INFO ] 2022-04-05 20:58:20.819 [main] StepDefintionForPortalLoginPage - User got logged in
+[INFO ] 2022-04-05 21:02:13.308 [main] Hooks - Closing the browser
+[INFO ] 2022-04-07 15:59:59.319 [main] Hooks - Launching chrome browser
+[WARN ] 2022-04-07 15:59:59.332 [main] Hooks - Hey this just a warning message
+[FATAL] 2022-04-07 15:59:59.332 [main] Hooks - hey this is just fatal error message
+[DEBUG] 2022-04-07 15:59:59.333 [main] Hooks - this is debug message
+[INFO ] 2022-04-07 16:00:09.420 [main] StepDefintionForPortalLoginPage - User is on the portal page
+[INFO ] 2022-04-07 16:00:17.969 [main] StepDefintionForPortalLoginPage - User got logged in
+[INFO ] 2022-04-07 16:04:20.522 [main] Hooks - Closing the browser
+[INFO ] 2022-04-07 16:11:29.341 [main] Hooks - Launching chrome browser
+[WARN ] 2022-04-07 16:11:29.354 [main] Hooks - Hey this just a warning message
+[FATAL] 2022-04-07 16:11:29.355 [main] Hooks - hey this is just fatal error message
+[DEBUG] 2022-04-07 16:11:29.355 [main] Hooks - this is debug message
+[INFO ] 2022-04-07 16:11:40.217 [main] StepDefintionForPortalLoginPage - User is on the portal page
+[INFO ] 2022-04-07 16:11:48.768 [main] StepDefintionForPortalLoginPage - User got logged in
+[INFO ] 2022-04-07 16:15:25.836 [main] Hooks - Closing the browser
+[INFO ] 2022-04-07 16:34:44.334 [main] Hooks - Launching chrome browser
+[WARN ] 2022-04-07 16:34:44.347 [main] Hooks - Hey this just a warning message
+[FATAL] 2022-04-07 16:34:44.348 [main] Hooks - hey this is just fatal error message
+[DEBUG] 2022-04-07 16:34:44.349 [main] Hooks - this is debug message
+[INFO ] 2022-04-07 16:34:57.302 [main] StepDefintionForPortalLoginPage - User is on the portal page
+[INFO ] 2022-04-07 16:35:05.901 [main] StepDefintionForPortalLoginPage - User got logged in
+[INFO ] 2022-04-07 16:39:15.143 [main] Hooks - Closing the browser

@@ -2,19 +2,19 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-03-28T14:10:31 IST" name="Suite" finished-at="2022-03-28T14:15:06 IST" duration-ms="275053">
+  <suite started-at="2022-04-04T15:57:12 IST" name="Default suite" finished-at="2022-04-04T15:58:27 IST" duration-ms="74850">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.mst.advance.automation.testrunner.RunnerClass@5cdec700]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.mst.advance.automation.testrunner.RunnerClass@75d2da2d]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2022-03-28T14:10:31 IST" name="Test" finished-at="2022-03-28T14:15:06 IST" duration-ms="275053">
+    <test started-at="2022-04-04T15:57:12 IST" name="Default test" finished-at="2022-04-04T15:58:27 IST" duration-ms="74850">
       <class name="com.mst.advance.automation.testrunner.RunnerClass">
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:com.mst.advance.automation.testrunner.RunnerClass@5cdec700]" started-at="2022-03-28T14:10:31 IST" name="setUpClass" finished-at="2022-03-28T14:10:31 IST" duration-ms="817" status="PASS">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:com.mst.advance.automation.testrunner.RunnerClass@75d2da2d]" started-at="2022-04-04T15:57:12 IST" name="setUpClass" finished-at="2022-04-04T15:57:13 IST" duration-ms="935" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.mst.advance.automation.testrunner.RunnerClass@5cdec700]" started-at="2022-03-28T14:10:31 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-03-28T14:15:03 IST" duration-ms="271307" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.mst.advance.automation.testrunner.RunnerClass@75d2da2d]" started-at="2022-04-04T15:57:13 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-04-04T15:58:25 IST" duration-ms="71515" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -27,24 +27,28 @@
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[element click intercepted: Element <button lightning-basecombobox_basecombobox="" id="combobox-button-318" type="button" aria-expanded="false" aria-haspopup="listbox" name="Receiving_Pension_other_than_SS_Railway__c" data-value="--None--" aria-label="Receiving pension other than SS?, --None--" class="slds-combobox__input slds-input_faux slds-combobox__input-value" aria-controls="dropdown-element-318">...</button> is not clickable at point (674, 545). Other element would receive the click: <lightning-input-field c-form4511cliamentinformationone_form4511cliamentinformationone="" id="Are_you_a_U_S_citizen_or_national__c-83" aria-describedby="Are_you_a_U_S_citizen_or_national__c-83" class="slds-form-element"></lightning-input-field>
-  (Session info: chrome=99.0.4844.82)
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//input[@name ='Normal_Weekly_Wages__c']"}
+  (Session info: chrome=100.0.4896.60)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
 System info: host: 'MSTSYS0000443', ip: '192.168.29.220', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.82, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\JANEHE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58993}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 917cb3f0775f8ce7acdc0198a662c7c8]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.60, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\JANEHE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51501}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fee93b12432cdd58fe85e3328dbd708a
+*** Element info: {Using=xpath, value=//input[@name ='Normal_Weekly_Wages__c']}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button lightning-basecombobox_basecombobox="" id="combobox-button-318" type="button" aria-expanded="false" aria-haspopup="listbox" name="Receiving_Pension_other_than_SS_Railway__c" data-value="--None--" aria-label="Receiving pension other than SS?, --None--" class="slds-combobox__input slds-input_faux slds-combobox__input-value" aria-controls="dropdown-element-318">...</button> is not clickable at point (674, 545). Other element would receive the click: <lightning-input-field c-form4511cliamentinformationone_form4511cliamentinformationone="" id="Are_you_a_U_S_citizen_or_national__c-83" aria-describedby="Are_you_a_U_S_citizen_or_national__c-83" class="slds-form-element"></lightning-input-field>
-  (Session info: chrome=99.0.4844.82)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@name ='Normal_Weekly_Wages__c']"}
+  (Session info: chrome=100.0.4896.60)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
 System info: host: 'MSTSYS0000443', ip: '192.168.29.220', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.82, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\JANEHE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58993}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 917cb3f0775f8ce7acdc0198a662c7c8
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.60, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\JANEHE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51501}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fee93b12432cdd58fe85e3328dbd708a
+*** Element info: {Using=xpath, value=//input[@name ='Normal_Weekly_Wages__c']}
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -56,22 +60,24 @@ at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCo
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
-at com.mst.advance.automation.pages.EmployeePage.receivingPensionOtherThanWages(EmployeePage.java:320)
-at stepDefinition.StepDefinitionForEmployeeSide.user_selects_whether_they_are_receiving_pension_other_than_wages(StepDefinitionForEmployeeSide.java:188)
-at ✽.User selects whether they are receiving pension other than wages(file:///C:/Users/MSTSYS/eclipse-workspace/AdvanceLevelAutomation/Featurefile/TestCase.feature:37)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:421)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
+at com.mst.advance.automation.pages.EmployerFormPage.normalWeeklyWages(EmployerFormPage.java:113)
+at stepDefinition.StepDefintionFor4511Employerside.user_enters_the_value_in_the_initial_claim_form(StepDefintionFor4511Employerside.java:73)
+at ✽.User enters the value in normalweeklywages as "500"(file:///C:/Users/MSTSYS/eclipse-workspace/AdvanceLevelAutomation/Featurefile/TestCase.feature:12)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.mst.advance.automation.testrunner.RunnerClass@5cdec700]" started-at="2022-03-28T14:15:03 IST" name="tearDownClass" finished-at="2022-03-28T14:15:06 IST" duration-ms="2841" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.mst.advance.automation.testrunner.RunnerClass@75d2da2d]" started-at="2022-04-04T15:58:25 IST" name="tearDownClass" finished-at="2022-04-04T15:58:27 IST" duration-ms="2058" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
       </class> <!-- com.mst.advance.automation.testrunner.RunnerClass -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
