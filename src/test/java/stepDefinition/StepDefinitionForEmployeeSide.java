@@ -215,13 +215,13 @@ public class StepDefinitionForEmployeeSide extends BrowserFactory {
 	}
 	
 	@And("^User selects the sector of the employer$")
-	public void user_selects_the_sector_of_the_employer() {
+	public void user_selects_the_sector_of_the_employer() throws InterruptedException {
 		
 		employee.SectorOfEmployer();
 	}
 	
 	@And("^User selects the business category and business type of the employer$")
-	public void user_selects_the_business_category_and_business_type_of_the_employer() {
+	public void user_selects_the_business_category_and_business_type_of_the_employer() throws InterruptedException {
 		
 		
 		employee.businessCategory();
@@ -238,14 +238,14 @@ public class StepDefinitionForEmployeeSide extends BrowserFactory {
 	}
 	
 	@And("^User selects whether they worked as corporate officer$")
-	public void user_selects_whether_they_worked_as_corporate_officer() {
+	public void user_selects_whether_they_worked_as_corporate_officer() throws InterruptedException {
 		
 		employee.corporateOfficer();
 		
 	}
 	
 	@And("^User selects whether they have received the worker compensation$")
-	public void user_selects_whether_they_have_received_the_worker_compensation() {
+	public void user_selects_whether_they_have_received_the_worker_compensation() throws InterruptedException {
 		
 		employee.workerCompensation();
 		
@@ -275,7 +275,7 @@ public class StepDefinitionForEmployeeSide extends BrowserFactory {
 	}
 	
 	@And("User checks the acknowledgement and enters the name of the signee as {string} and clicks submit")
-	public void user_checks_the_acknowledgement_and_enters_the_name_of_the_signee_as_and_clicks_submit(String nameOfTheSignee) {
+	public void user_checks_the_acknowledgement_and_enters_the_name_of_the_signee_as_and_clicks_submit(String nameOfTheSignee) throws InterruptedException {
 		
 		
 		employee.acknowledgement();

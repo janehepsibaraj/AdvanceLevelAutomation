@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Apr 04 11:28:42 IST 2022</td>
+<td>Started on:</td><td>Wed Apr 13 21:31:13 IST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>172 seconds (172957 ms)</td>
+<tr><td>Total time:</td><td>75 seconds (75593 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,51 +76,58 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.mst.advance.automation.testrunner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.mst.advance.automation.testrunner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login to the community portal with valid credentials", "Optional[To submit the Initial Claim and Payment Certification for the employee]"</td>
-<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button lightning-basecombobox_basecombobox=&quot;&quot; id=&quot;combobox-button-66&quot; type=&quot;button&quot; aria-expanded=&quot;false&quot; aria-haspopup=&quot;listbox&quot; name=&quot;Federal_income_tax_withheld__c&quot; data-value=&quot;--None--&quot; aria-label=&quot;Federal income tax withheld?, --None--&quot; class=&quot;slds-combobox__input slds-input_faux slds-combobox__input-value&quot; aria-controls=&quot;dropdown-element-66&quot;&gt;...&lt;/button&gt; is not clickable at point (683, 498). Other element would receive the click: &lt;lightning-input-field c-form4511sectionb_form4511sectionb=&quot;&quot; id=&quot;Any_other_Employment__c-44&quot; class=&quot;slds-form-element&quot;&gt;&lt;/lightning-input-field&gt;
-  (Session info: chrome=100.0.4896.60)
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id = &apos;input-0&apos;]&quot;}
+  (Session info: chrome=100.0.4896.88)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
-System info: host: &apos;MSTSYS0000443&apos;, ip: &apos;192.168.29.220&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
+System info: host: &apos;MSTSYS0000443&apos;, ip: &apos;192.168.43.105&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.60, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\JANEHE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50523}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 4b5f724f65fd4f8d1401cdc27921a425
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.88, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\JANEHE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53387}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d82d1273a75a2c55568003f18d22d535
+*** Element info: {Using=xpath, value=//input[@id = &apos;input-0&apos;]}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
-	at com.mst.advance.automation.pages.EmployeePage.federalIncomeTax(EmployeePage.java:139)
-	at stepDefinition.StepDefinitionForEmployeeSide.user_selects_the_value_in_sectionb_and_clicks_next(StepDefinitionForEmployeeSide.java:98)
-	at ?.User selects the value in sectionb and clicks next(file:///C:/Users/MSTSYS/eclipse-workspace/AdvanceLevelAutomation/Featurefile/TestCase.feature:26)
-... Removed 5 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace288986440", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace288986440'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button lightning-basecombobox_basecombobox=&quot;&quot; id=&quot;combobox-button-66&quot; type=&quot;button&quot; aria-expanded=&quot;false&quot; aria-haspopup=&quot;listbox&quot; name=&quot;Federal_income_tax_withheld__c&quot; data-value=&quot;--None--&quot; aria-label=&quot;Federal income tax withheld?, --None--&quot; class=&quot;slds-combobox__input slds-input_faux slds-combobox__input-value&quot; aria-controls=&quot;dropdown-element-66&quot;&gt;...&lt;/button&gt; is not clickable at point (683, 498). Other element would receive the click: &lt;lightning-input-field c-form4511sectionb_form4511sectionb=&quot;&quot; id=&quot;Any_other_Employment__c-44&quot; class=&quot;slds-form-element&quot;&gt;&lt;/lightning-input-field&gt;
-  (Session info: chrome=100.0.4896.60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:421)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
+	at com.mst.advance.automation.pages.LoginPage.enterUsername(LoginPage.java:33)
+	at stepDefinition.StepDefintionForPortalLoginPage.user_enters_the_username_and_password(StepDefintionForPortalLoginPage.java:55)
+	at ?.user enters the username as &quot;janeqaedd1+03@gmail.com&quot; and password as &quot;Janeeddproject@0003&quot;(file:///C:/Users/MSTSYS/eclipse-workspace/AdvanceLevelAutomation/Featurefile/TestCase.feature:5)
+... Removed 4 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1080945842", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1080945842'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id = &apos;input-0&apos;]&quot;}
+  (Session info: chrome=100.0.4896.88)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
-System info: host: &apos;MSTSYS0000443&apos;, ip: &apos;192.168.29.220&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
+System info: host: &apos;MSTSYS0000443&apos;, ip: &apos;192.168.43.105&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.60, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\JANEHE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50523}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 4b5f724f65fd4f8d1401cdc27921a425
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.88, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\JANEHE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53387}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d82d1273a75a2c55568003f18d22d535
+*** Element info: {Using=xpath, value=//input[@id = &apos;input-0&apos;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
-	at com.mst.advance.automation.pages.EmployeePage.federalIncomeTax(EmployeePage.java:139)
-	at stepDefinition.StepDefinitionForEmployeeSide.user_selects_the_value_in_sectionb_and_clicks_next(StepDefinitionForEmployeeSide.java:98)
-	at ?.User selects the value in sectionb and clicks next(file:///C:/Users/MSTSYS/eclipse-workspace/AdvanceLevelAutomation/Featurefile/TestCase.feature:26)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:421)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
+	at com.mst.advance.automation.pages.LoginPage.enterUsername(LoginPage.java:33)
+	at stepDefinition.StepDefintionForPortalLoginPage.user_enters_the_username_and_password(StepDefintionForPortalLoginPage.java:55)
+	at ?.user enters the username as &quot;janeqaedd1+03@gmail.com&quot; and password as &quot;Janeeddproject@0003&quot;(file:///C:/Users/MSTSYS/eclipse-workspace/AdvanceLevelAutomation/Featurefile/TestCase.feature:5)
 </pre></div></td>
-<td>170</td>
-<td>com.mst.advance.automation.testrunner.RunnerClass@75d2da2d</td></tr>
+<td>68</td>
+<td>com.mst.advance.automation.testrunner.RunnerClass@41beb473</td></tr>
 </table><p>
 </body>
 </html>

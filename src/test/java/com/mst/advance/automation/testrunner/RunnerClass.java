@@ -10,7 +10,7 @@ import io.cucumber.testng.CucumberOptions;
 
 
 @RunWith(Cucumber.class)
-@CucumberOptions( features= {"C:\\Users\\MSTSYS\\eclipse-workspace\\AdvanceLevelAutomation\\Featurefile"},glue = {"stepDefinition"}, tags = "@SmokeSuite", monochrome = true, publish = true)
+@CucumberOptions( features= {"C:\\Users\\MSTSYS\\eclipse-workspace\\AdvanceLevelAutomation\\Featurefile"},glue = {"stepDefinition"},plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}, tags = "@SmokeSuite", monochrome = true, publish = true)
 
 public class RunnerClass extends AbstractTestNGCucumberTests {
    

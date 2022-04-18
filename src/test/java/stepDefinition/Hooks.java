@@ -29,9 +29,6 @@ public class Hooks {
 	protected static  LoginPage login;
 	protected static EmployerFormPage employer;
 	protected static EmployeePage employee;
-	//protected static ReportGenerator reporter;
-	//ExtentTest parentTest;
-	//protected static EmailUtils emailUtils;
 	private static Logger log = LogManager.getLogger(Hooks.class);
  
 
@@ -57,7 +54,7 @@ public class Hooks {
      
      public void after() {
     	 
-    	 driver.quit();
+    	 //driver.quit();
     	 log.info("Closing the browser");
     	 
     	 

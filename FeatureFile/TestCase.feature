@@ -2,7 +2,7 @@ Feature: To submit the Initial Claim and Payment Certification for the employee
 @SmokeSuite
 Scenario: Login to the community portal with valid credentials
  Given user navigate to community url
- When user enters the username as "janeqaedd1+03@gmail.com" and password as "Janeeddproject@0003"
+ When user enters the username as "janeqaedd1+03@gmail.com" and password as "Janeeddproject@03"
  Then user should be able to login
  
 #Scenario: Click the start form of particular employee and complete the Initial claim form for that employee

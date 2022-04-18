@@ -1,6 +1,8 @@
 package com.mst.advance.automation.pages;
 
+import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -66,7 +68,7 @@ public class EmployeePage extends DriverClass {
 	
 	By select_payCycle = By.xpath("//button[@name = 'Payment_Cycle__c']");
 	
-	By txt_earnings = By.xpath("//button[@name = 'Payment_Cycle__c']");
+	By txt_earnings = By.xpath("//input[@name = 'Earnings__c']");
 	
 	By txt_startDate = By.xpath("//input[@name = 'Start_Date__c']");
 	
@@ -104,13 +106,14 @@ public class EmployeePage extends DriverClass {
 	
 	By btn_finalSubmit = By.xpath("//button[@name = 'Submit']");
 	
+	By txt_message = By.xpath("//h2[contains(text(),'Confirmation - Your Form Has Been Submitted')]");
+	
 	
 	
 	
 	public void enterSSN(String employeeSSN) throws InterruptedException {
 		
-		Actions action = new Actions(driver);
-		action.sendKeys(Keys.PAGE_DOWN).build().perform();
+		act.sendKeys(Keys.PAGE_DOWN).build().perform();
 		Thread.sleep(5000);
 		driver.findElement(txt_ssn).sendKeys(employeeSSN);
 	}
@@ -124,12 +127,8 @@ public class EmployeePage extends DriverClass {
 		
 		WebElement element = new WebDriverWait(driver, 60).until(ExpectedConditions.elementToBeClickable(select_otherEmployment));
 		element.click();
-		Actions otheremp = new Actions(driver);
-		otheremp.sendKeys(Keys.ARROW_DOWN).build().perform();
-		Thread.sleep(2000);
-		otheremp.sendKeys(Keys.ARROW_DOWN).build().perform();
-		Thread.sleep(2000);
-		otheremp.sendKeys(Keys.ENTER).build().perform();
+		act.sendKeys("No").build().perform();
+		act.sendKeys(Keys.ENTER).build().perform();
 		
 	}
 	
@@ -137,12 +136,8 @@ public class EmployeePage extends DriverClass {
 		
 		WebElement elementOne = new WebDriverWait(driver, 60).until(ExpectedConditions.elementToBeClickable(select_federalIncomeTax));
 		elementOne.click();
-		Actions federaltax = new Actions(driver);
-		federaltax.sendKeys(Keys.ARROW_DOWN).build().perform();
-		Thread.sleep(2000);
-		federaltax.sendKeys(Keys.ARROW_DOWN).build().perform();
-		Thread.sleep(2000);
-		federaltax.sendKeys(Keys.ENTER).build().perform();
+		act.sendKeys("No").build().perform();
+		act.sendKeys(Keys.ENTER).build().perform();
 		
 	}
 	
@@ -160,10 +155,9 @@ public class EmployeePage extends DriverClass {
 		
 		WebElement elementTwo = new WebDriverWait(driver, 60).until(ExpectedConditions.elementToBeClickable(select_gender));
 		elementTwo.click();
-		Actions action = new Actions(driver);
-		action.sendKeys(Keys.ARROW_DOWN).build().perform();
+		act.sendKeys(Keys.ARROW_DOWN).build().perform();
 		Thread.sleep(2000);
-		action.sendKeys(Keys.ENTER).build().perform();
+		act.sendKeys(Keys.ENTER).build().perform();
 		Thread.sleep(5000);
 	}
 	
@@ -171,16 +165,14 @@ public class EmployeePage extends DriverClass {
 		
 		WebElement elementTwo = new WebDriverWait(driver, 60).until(ExpectedConditions.elementToBeClickable(select_SSNName));
 		elementTwo.click();
-		Actions ssnname = new Actions(driver);
-		ssnname.sendKeys(Keys.ARROW_DOWN).build().perform();
-		Thread.sleep(2000);
-		ssnname.sendKeys(Keys.ENTER).build().perform();
+		act.sendKeys("Yes").build().perform();
+		act.sendKeys(Keys.ENTER).build().perform();
 	}
 	
 	public void mailingAddress(String employeeMailingAddress) {
 		
-		Actions a = new Actions(driver);
-		a.sendKeys(Keys.PAGE_DOWN).build().perform();
+
+		act.sendKeys(Keys.PAGE_DOWN).build().perform();
 		driver.findElement(txt_mailingAddress).sendKeys(employeeMailingAddress);
 	}
 	
@@ -194,18 +186,17 @@ public class EmployeePage extends DriverClass {
 		
 		WebElement elementThree = new WebDriverWait(driver, 60).until(ExpectedConditions.elementToBeClickable(select_state));
 		elementThree.click();
-		Actions actionOne = new Actions(driver);
-		actionOne.sendKeys(Keys.ARROW_DOWN).build().perform();
-		Thread.sleep(2000);
-		actionOne.sendKeys(Keys.ARROW_DOWN).build().perform();
-		Thread.sleep(2000);
-		actionOne.sendKeys(Keys.ARROW_DOWN).build().perform();
-		Thread.sleep(2000);
-		actionOne.sendKeys(Keys.ARROW_DOWN).build().perform();
-		Thread.sleep(2000);
-		actionOne.sendKeys(Keys.ARROW_DOWN).build().perform();
-		Thread.sleep(2000);
-		actionOne.sendKeys(Keys.ENTER).build().perform();
+		act.sendKeys(Keys.ARROW_DOWN).build().perform();
+		Thread.sleep(1000);
+		act.sendKeys(Keys.ARROW_DOWN).build().perform();
+		Thread.sleep(1000);
+		act.sendKeys(Keys.ARROW_DOWN).build().perform();
+		Thread.sleep(1000);
+		act.sendKeys(Keys.ARROW_DOWN).build().perform();
+		Thread.sleep(1000);
+		act.sendKeys(Keys.ARROW_DOWN).build().perform();
+		Thread.sleep(1000);
+		act.sendKeys(Keys.ENTER).build().perform();
 	}
 	
 	public void zipcode(String zipCode) {
@@ -220,14 +211,13 @@ public class EmployeePage extends DriverClass {
 	
 	public void sameMailingAddress() throws InterruptedException {
 		
-		Actions a1 = new Actions(driver);
-		a1.sendKeys(Keys.PAGE_DOWN).build().perform();
+		act.sendKeys(Keys.PAGE_DOWN).build().perform();
 		WebElement elementFour = new WebDriverWait(driver, 60).until(ExpectedConditions.elementToBeClickable(select_sameMailingAdddress));
 		elementFour.click();
-		Actions b = new Actions(driver);
-		b.sendKeys(Keys.ARROW_DOWN).build().perform();
 		Thread.sleep(2000);
-		b.sendKeys(Keys.ENTER).build().perform();
+		act.sendKeys("Yes").build().perform();
+		Thread.sleep(2000);
+		act.sendKeys(Keys.ENTER).build().perform();
 
 		
 	}
@@ -236,12 +226,9 @@ public class EmployeePage extends DriverClass {
 		
 		WebElement elementFive = new WebDriverWait(driver, 60).until(ExpectedConditions.elementToBeClickable(select_unemploymentClaim));
 		elementFive.click();
-		Actions c = new Actions(driver);
-		c.sendKeys(Keys.ARROW_DOWN).build().perform();
 		Thread.sleep(2000);
-		c.sendKeys(Keys.ARROW_DOWN).build().perform();
-		Thread.sleep(2000);
-		c.sendKeys(Keys.ENTER).build().perform();
+		act.sendKeys("No").build().perform();
+		act.sendKeys(Keys.ENTER).build().perform();
 	}
 	
 	
@@ -249,10 +236,8 @@ public class EmployeePage extends DriverClass {
 		
 		WebElement elementSix = new WebDriverWait(driver, 60).until(ExpectedConditions.elementToBeClickable(select_federalGovernment));
 		elementSix.click();
-		Actions d = new Actions(driver);
-		d.sendKeys(Keys.ARROW_DOWN).build().perform();
-		Thread.sleep(2000);
-		d.sendKeys(Keys.ENTER).build().perform();
+		act.sendKeys("Yes").build().perform();
+		act.sendKeys(Keys.ENTER).build().perform();
 		
 	}
 	
@@ -260,12 +245,8 @@ public class EmployeePage extends DriverClass {
 		
 		WebElement elementSeven = new WebDriverWait(driver, 60).until(ExpectedConditions.elementToBeClickable(select_workInOtherState));
 		elementSeven.click();
-		Actions e = new Actions(driver);
-		e.sendKeys(Keys.ARROW_DOWN).build().perform();
-		Thread.sleep(2000);
-		e.sendKeys(Keys.ARROW_DOWN).build().perform();
-		Thread.sleep(2000);
-		e.sendKeys(Keys.ENTER).build().perform();
+		act.sendKeys("No").build().perform();
+		act.sendKeys(Keys.ENTER).build().perform();
 	}
 	
 
@@ -273,24 +254,17 @@ public class EmployeePage extends DriverClass {
 		
 		WebElement elementEight = new WebDriverWait(driver, 60).until(ExpectedConditions.elementToBeClickable(select_unemploymentInsurance));
 		elementEight.click();
-		Actions i= new Actions(driver);
-		i.sendKeys(Keys.ARROW_DOWN).build().perform();
-		Thread.sleep(2000);
-		i.sendKeys(Keys.ARROW_DOWN).build().perform();
-		Thread.sleep(2000);
-		i.sendKeys(Keys.ENTER).build().perform();
+		act.sendKeys("No").build().perform();
+		act.sendKeys(Keys.ENTER).build().perform();
 	}
 	
 	public void drivingLicense() throws InterruptedException {
 		
 		WebElement elementNine = new WebDriverWait(driver, 60).until(ExpectedConditions.elementToBeClickable(select_drivingLicense));
 		elementNine.click();
-		Actions dl = new Actions(driver);
-		dl.sendKeys(Keys.ARROW_DOWN).build().perform();
 		Thread.sleep(2000);
-		dl.sendKeys(Keys.ARROW_DOWN).build().perform();
-		Thread.sleep(2000);
-		dl.sendKeys(Keys.ENTER).build().perform();
+		act.sendKeys("No").build().perform();
+		act.sendKeys(Keys.ENTER).build().perform();
 		System.out.println("No driving license");
 		
 	}
@@ -299,31 +273,23 @@ public class EmployeePage extends DriverClass {
 		
 		System.out.println("US citizen");
 		
-		Thread.sleep(3000);
 		WebElement elementNine = new WebDriverWait(driver, 60).until(ExpectedConditions.elementToBeClickable(select_otherCitizen));
+		((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView(true);", elementNine);
 		elementNine.click();
-		Actions us = new Actions(driver);
-		us.sendKeys(Keys.ARROW_DOWN).build().perform();
-		Thread.sleep(2000);
-		us.sendKeys(Keys.ENTER).build().perform();
-		Thread.sleep(2000);
+		act.sendKeys("Yes").build().perform();
+		act.sendKeys(Keys.ENTER).build().perform();
+		
 		
 		
 	}
 	
 	public void receivingPensionOtherThanWages() throws InterruptedException {
 		
-		
-		Actions pd = new Actions(driver);
-		pd.sendKeys(Keys.PAGE_DOWN).build().perform();
 		WebElement elementTen = new WebDriverWait(driver, 60).until(ExpectedConditions.elementToBeClickable(select_pension));
 		elementTen.click();
-		Actions a8 = new Actions(driver);
-		a8.sendKeys(Keys.ARROW_DOWN).build().perform();
+		act.sendKeys("No").build().perform();
 		Thread.sleep(2000);
-		a8.sendKeys(Keys.ARROW_DOWN).build().perform();
-		Thread.sleep(2000);
-		a8.sendKeys(Keys.ENTER).build().perform();
+		act.sendKeys(Keys.ENTER).build().perform();
 	}
 	
 	public void addEmployer() {
@@ -331,7 +297,7 @@ public class EmployeePage extends DriverClass {
 		WebElement addEmployer = new WebDriverWait(driver, 60).until(ExpectedConditions.elementToBeClickable(btn_addEmployer));
 		addEmployer.click();
 		
-		//driver.findElement(btn_addEmployer).click();
+		
 	}
 	
 	public void employerName(String employerName) {
@@ -342,9 +308,8 @@ public class EmployeePage extends DriverClass {
 	public void paycycle() {
 		
 		driver.findElement(select_payCycle).click();
-		Actions a9 = new Actions(driver);
-		a9.sendKeys(Keys.ARROW_DOWN).build().perform();
-		a9.sendKeys(Keys.ENTER).build().perform();
+		act.sendKeys(Keys.ARROW_DOWN).build().perform();
+		act.sendKeys(Keys.ENTER).build().perform();
 	}
 	
 	public void earnings(String earnings) {
@@ -368,32 +333,37 @@ public class EmployeePage extends DriverClass {
 		driver.findElement(txt_longestWorkedEmployer).sendKeys(longestWorkedEmployerName);
 	}
 	
-	public void SectorOfEmployer() {
+	public void SectorOfEmployer() throws InterruptedException {
 		
 		WebElement sector = new WebDriverWait(driver, 60).until(ExpectedConditions.elementToBeClickable(select_sectorOfEmployer));
 		sector.click();
-		Actions sector1 = new Actions(driver);
-		sector1.sendKeys(Keys.ARROW_DOWN).build().perform();
-		sector1.sendKeys(Keys.ENTER).build().perform();
+		Thread.sleep(1000);
+		act.sendKeys(Keys.ARROW_DOWN).build().perform();
+		Thread.sleep(1000);
+		act.sendKeys(Keys.ENTER).build().perform();
 		
 	}
 
-	public void businessCategory() {
+	public void businessCategory() throws InterruptedException {
 		
 		WebElement businesscategory = new WebDriverWait(driver, 60).until(ExpectedConditions.elementToBeClickable(select_businessCategory));
+		((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView(true);",businesscategory );
 		businesscategory.click();
-		Actions category = new Actions(driver);
-		category.sendKeys(Keys.ARROW_DOWN).build().perform();
-		category.sendKeys(Keys.ENTER).build().perform();
+		Thread.sleep(1000);
+		act.sendKeys(Keys.ARROW_DOWN).build().perform();
+		Thread.sleep(1000);
+		act.sendKeys(Keys.ENTER).build().perform();
 	}
 	
-	public void businessType() {
+	public void businessType() throws InterruptedException {
 		
-		WebElement businesstype = new WebDriverWait(driver, 60).until(ExpectedConditions.elementToBeClickable(select_businessCategory));
+		WebElement businesstype = new WebDriverWait(driver, 60).until(ExpectedConditions.elementToBeClickable(select_businessType));
+		((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView(true);",businesstype);
 		businesstype.click();
-		Actions type = new Actions(driver);
-		type.sendKeys(Keys.ARROW_DOWN).build().perform();
-		type.sendKeys(Keys.ENTER).build().perform();
+		Thread.sleep(1000);
+		act.sendKeys(Keys.ARROW_DOWN).build().perform();
+		Thread.sleep(1000);
+		act.sendKeys(Keys.ENTER).build().perform();
 		
 	}
 	
@@ -402,64 +372,61 @@ public class EmployeePage extends DriverClass {
 		driver.findElement(txt_workingDays).sendKeys(workingDays);
 	}
 	
-	public void corporateOfficer() {
+	public void corporateOfficer() throws InterruptedException {
 		
 		WebElement corporateofficer = new WebDriverWait(driver, 60).until(ExpectedConditions.elementToBeClickable(select_corporateOfficer));
 		corporateofficer.click();
-		Actions co = new Actions(driver);
-		co.sendKeys(Keys.ARROW_DOWN).build().perform();
-		co.sendKeys(Keys.ARROW_DOWN).build().perform();
-		co.sendKeys(Keys.ENTER).build().perform();
+		Thread.sleep(1000);
+		act.sendKeys("No").build().perform();
+		act.sendKeys(Keys.ENTER).build().perform();
 		
 	}
 	
-	public void workerCompensation() {
+	public void workerCompensation() throws InterruptedException {
 		
 		WebElement compensation  = new WebDriverWait(driver, 60).until(ExpectedConditions.elementToBeClickable(select_workersCompensation));
 		compensation.click();
-		Actions com = new Actions(driver);
-		com.sendKeys(Keys.ARROW_DOWN).build().perform();
-		com.sendKeys(Keys.ARROW_DOWN).build().perform();
-		com.sendKeys(Keys.ENTER).build().perform();
+		Thread.sleep(1000);
+		act.sendKeys("No").build().perform();
+		act.sendKeys(Keys.ENTER).build().perform();
 	}
 	
 	public void writtenLanguagePreference() {
 		
 		WebElement writtenLanguagePreference  = new WebDriverWait(driver, 60).until(ExpectedConditions.elementToBeClickable(select_writtenLanguagePreference));
 		writtenLanguagePreference.click();
-		Actions writtenLanguage = new Actions(driver);
-		writtenLanguage.sendKeys(Keys.ARROW_DOWN).build().perform();
-		writtenLanguage.sendKeys(Keys.ENTER).build().perform();
+		act.sendKeys(Keys.ARROW_DOWN).build().perform();
+		act.sendKeys(Keys.ENTER).build().perform();
 		
 	}
 	
 	public void spokenLanguagePreference() {
 		
 		WebElement spokenLanguagePreference  = new WebDriverWait(driver, 60).until(ExpectedConditions.elementToBeClickable(select_spokenLanguagePreference));
+		((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView(true);",spokenLanguagePreference);
 		spokenLanguagePreference.click();
-		Actions spokenLanguage = new Actions(driver);
-		spokenLanguage.sendKeys(Keys.ARROW_DOWN).build().perform();
-		spokenLanguage.sendKeys(Keys.ENTER).build().perform();
+		act.sendKeys(Keys.ARROW_DOWN).build().perform();
+		act.sendKeys(Keys.ENTER).build().perform();
 	}
 	
 	public void claimForAWeek() {
 		
 		WebElement claim  = new WebDriverWait(driver, 60).until(ExpectedConditions.elementToBeClickable(select_claimForAWeek));
+		((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView(true);",claim);
 		claim.click();
-		Actions claimm = new Actions(driver);
-		claimm.sendKeys(Keys.ARROW_DOWN).build().perform();
-		claimm.sendKeys(Keys.ARROW_DOWN).build().perform();
-		claimm.sendKeys(Keys.ENTER).build().perform();
+		act.sendKeys(Keys.ARROW_DOWN).build().perform();
+		act.sendKeys(Keys.ARROW_DOWN).build().perform();
+		act.sendKeys(Keys.ENTER).build().perform();
 		
 	}
 	
 	public void employeeRace() {
 		
 		WebElement race  = new WebDriverWait(driver, 60).until(ExpectedConditions.elementToBeClickable(select_race));
+		((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView(true);",race);
 		race.click();
-		Actions race1 = new Actions(driver);
-		race1.sendKeys(Keys.ARROW_DOWN).build().perform();
-		race1.sendKeys(Keys.ENTER).build().perform();
+		act.sendKeys(Keys.ARROW_DOWN).build().perform();
+		act.sendKeys(Keys.ENTER).build().perform();
 		
 	}
 	
@@ -467,17 +434,15 @@ public class EmployeePage extends DriverClass {
 		
 		WebElement employeeDisability  = new WebDriverWait(driver, 60).until(ExpectedConditions.elementToBeClickable(select_anyDisability));
 		employeeDisability.click();
-		Actions disability = new Actions(driver);
-		disability.sendKeys(Keys.ARROW_DOWN).build().perform();
-		disability.sendKeys(Keys.ARROW_DOWN).build().perform();
-		disability.sendKeys(Keys.ENTER).build().perform();
+		act.sendKeys(Keys.ARROW_DOWN).build().perform();
+		act.sendKeys(Keys.ARROW_DOWN).build().perform();
+		act.sendKeys(Keys.ENTER).build().perform();
 		
 	}
 	
 	public void acknowledgement() {
 		
-		Actions a10 = new Actions(driver);
-		a10.sendKeys(Keys.PAGE_DOWN).build().perform();
+		act.sendKeys(Keys.PAGE_DOWN).build().perform();
 		driver.findElement(select_acknowledgement).click();
 		
 	}
@@ -487,9 +452,17 @@ public class EmployeePage extends DriverClass {
 		driver.findElement(txt_nameOfSignee).sendKeys(nameOfTheSignee);
 	}
 	
-	public void clickFinalSubmit() {
+	public void clickFinalSubmit() throws InterruptedException {
 		
 		driver.findElement(btn_finalSubmit).click();
+		
+		Thread.sleep(10000);
+		WebElement successMessage = driver.findElement(txt_message);
+		String expectedText = "Confirmation - Your Form Has Been Submitted";
+		String actualText = successMessage.getText();
+		System.out.println(actualText);
+		Assert.assertEquals(expectedText, actualText);
+		
 	}
 	
 	

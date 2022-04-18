@@ -24,29 +24,6 @@ import io.qameta.allure.Story;
 
 public class StepDefintionFor4511Employerside extends BrowserFactory {
 	
-//	public WebDriver driver;
-//	EmployerFormPage employer;
-
-
-//	@Given("^User is on the portal login page$")
-//	public void user_is_on_the_portal_login_page() throws InterruptedException {
-//	    // Write code here that turns the phrase above into concrete actions
-//		System.out.println("User enters the valid credentials and login to the employer portal");
-//
-//	}
-//		
-//		
-//		
-//	@When("User enters the username as {string} and password as {string}")
-//     public void user_enters_the_username_and_password(String userName, String password) throws InterruptedException{
-//		
-//		
-//		
-//		employer.enterPortalUsername(userName);
-//		Thread.sleep(2000);
-//		employer.enterPortalPassword(password);
-//		employer.clickLoginButton();
-//		}
 	
 	@Severity(SeverityLevel.MINOR)	
 	@Description("Verify the employer is able to complete the 4511 form........")
